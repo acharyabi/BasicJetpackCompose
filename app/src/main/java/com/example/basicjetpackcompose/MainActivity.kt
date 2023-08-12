@@ -62,7 +62,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             //.background(Color.White)
 
     )*/
+
+//Using Box layout.
     Box(
+
         modifier = Modifier
             .size(400.dp) ,
         contentAlignment = Alignment.Center
@@ -92,7 +95,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     }
 
  */
-    Column {
+    //Adding images in the form of a list
+
+/*    Column {
 
        for(i in 1..10) {
             Icon(
@@ -101,13 +106,18 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             )
         }
     }
-    /*
+
+*/
+
+/*
     //Adding Images to the App.
     Image(painter= painterResource(id = R.drawable.ic_launcher_foreground) ,
         contentDescription =null,
         modifier=Modifier.background(Color.Black))
         
-     */
+*/
+
+
 }
 //Layout Initial Inspector
 @Preview(showBackground = true)
