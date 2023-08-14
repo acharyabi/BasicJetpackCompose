@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Icon
@@ -117,9 +118,18 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         
 */
 
-
-}
 //Layout Initial Inspector
+    //Act as  a recycler view and made accordingly with time.
+    LazyColumn(modifier = Modifier.fillMaxSize()) {
+        items(10){ i->
+            Icon(imageVector = Icons.Default.Add,
+                contentDescription = null,
+                modifier = Modifier.size(100.dp)
+            )
+        }
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
